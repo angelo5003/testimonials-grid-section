@@ -1,9 +1,11 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 400px 250px 200px;
+  grid-template-columns: 550px 250px 200px;
   grid-auto-rows: minmax(auto, 350px);
   justify-content: center;
   grid-gap: 50px;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
 
   /* Positon top of the container to the middle of the page */
   position: absolute;
@@ -16,6 +18,7 @@
 .user-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .profile-img {
@@ -27,9 +30,26 @@
   padding-left: 5px;
 }
 
+.grid-item {
+  padding: 20px;
+}
+
+.grid-item-1 {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.quotations {
+  padding-left: 100px;
+}
+
+.review-title {
+  margin: 0;
+  margin-top: 2px;
+}
+
 @media screen and (max-width: 1200px) {
   .grid-container {
-    grid-template-columns: 400px 250px;
+    grid-template-columns: 450px 250px;
   }
 }
 
