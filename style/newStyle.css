@@ -4,6 +4,13 @@
   grid-auto-rows: minmax(auto, 350px);
   justify-content: center;
   grid-gap: 50px;
+
+  /* Positon top of the container to the middle of the page */
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .user-container {
@@ -18,4 +25,17 @@
 .user-info {
   width: 130px;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 400px 250px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .grid-container {
+    grid-template-columns: 350px;
+    grid-gap: 100px;
+  }
 }
