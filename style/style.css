@@ -96,6 +96,18 @@
 @media screen and (max-width: 1200px) {
   .grid-container {
     grid-template-columns: 450px 250px;
+    /* grid-auto-rows: minmax(auto, 350px); */
+    height: 100vh;
+  }
+
+  .review-title,
+  .review-title-white {
+    font-size: 13px;
+  }
+
+  .review-white,
+  .review {
+    font-size: 13px;
   }
 }
 
